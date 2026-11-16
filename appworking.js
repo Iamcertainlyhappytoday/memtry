@@ -117,7 +117,7 @@ function gameOver() {
  
 }
 function replayquestion(){
-   
+   score=0;
     notes.innerHTML=' '+' play again?'
   setTimeout( createBoard,3000)
 }
