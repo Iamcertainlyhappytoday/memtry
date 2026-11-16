@@ -1,6 +1,7 @@
 const gridDisplay = document.getElementById('grid')
 const canvas = document.createElement('canvas');
 const scoreSpan = document.getElementById('score')
+const notes = document.getElementById('notes')
 const MAX_SCORE = 6
 const cardsArr = ['imglime/a1.JPG', 'imglime/a2.JPG', 'imglime/a3.JPG',
     'imglime/a4.JPG', 'imglime/a5.JPG', 'imglime/a6.JPG']
@@ -41,6 +42,8 @@ function cardFlip() {
     if (card1 == null) {
             card1 = this;
            this.src = cardsArr[this.getAttribute('data-id')];
+        notes.innerHTML=' : '
+        notes.innerHTML+='um thinking...'
     }else {card2 = this;
       
             checkMatch();
@@ -55,6 +58,7 @@ function checkMatch() {
         card2 = null
         score = score + 1
         scoreSpan.innerText = score
+        notes.innerHTML=' : yuppa, you got a match' 
         if (score === MAX_SCORE) {
             gameOver()
         }
