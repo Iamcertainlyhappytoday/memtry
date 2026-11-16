@@ -64,6 +64,8 @@ function checkMatch() {
         }
     }
     else {
+        card1.img.setAttribute('src', 'imglime/orange.PNG')
+        notes.innerHTML=' : '
         disableClicks()
         setTimeout(restoreCards, 100)
     }
