@@ -51,4 +51,5 @@
     opacity: 0;
     cursor: auto;
 }
-
+.holder{display:flex;margin:auto; width:120px;}
+h2{background-color:rebeccapurple; color:aliceblue; display:flex;}
