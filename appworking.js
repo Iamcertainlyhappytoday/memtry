@@ -26,7 +26,7 @@ function createBoard() {
        gridDisplay.innerHTML=''
     notes.innerHTML=''
     
-    scoreSpan.innerText=' 0';
+    scoreSpan.innerText=' '+score;
     indices.forEach( (i) => {
         const img = document.createElement('img')
         img.classList.add('card')
