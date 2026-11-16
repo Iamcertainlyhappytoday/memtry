@@ -1,0 +1,50 @@
+/**, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}*/
+
+.card {
+    display:flex;
+    width: 221px;
+    height: 127px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;   
+    cursor: pointer;
+}
+
+#grid {
+    margin: 10px auto;
+   
+    
+  
+    display: flex;
+    flex-wrap: wrap;  
+    max-width:677px;
+    height: 512px;
+}
+
+.gameover {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #222222;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    background-color: #DDDDDD;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*index is a multiple of 3*/
+
+.matched {
+    opacity: 0;
+    cursor: auto;
+}
+.holder{display:flex;margin:auto; width:400px;}
+h2{background-color:rebeccapurple; color:aliceblue; display:inline-flex;flex-direction: row;}
+.card img{display:flex; width:100%; height:100%;}
