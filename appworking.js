@@ -61,7 +61,7 @@ function checkMatch() {
     }
     else {
         disableClicks()
-        setTimeout(restoreCards, 1000)
+        setTimeout(restoreCards, 100)
     }
 }
 
